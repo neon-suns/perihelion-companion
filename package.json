@@ -1,0 +1,37 @@
+{
+  "name": "neonsuns-perihelion-companion",
+  "version": "0.0.1",
+  "description": "This is unofficial companion app for depressive cyberpunk RPG Perihelion by Morbid Visions in 1993 for Amiga computers.",
+  "productName": "NeonSunsPerihelionCompanion",
+  "author": "NeonSuns",
+  "private": true,
+  "scripts": {
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "lint": "eslint --ext .js,.vue ./",
+    "lint:fix": "eslint --ext .js,.vue ./ --fix",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "vue-i18n": "^9.0.0",
+    "pinia": "^2.0.11",
+    "@quasar/extras": "^1.0.0",
+    "quasar": "^2.6.0",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-plugin-vue": "^8.5.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "@intlify/vite-plugin-vue-i18n": "^3.3.1",
+    "@quasar/app-vite": "^1.0.0-alpha.0",
+    "autoprefixer": "^10.4.2"
+  },
+  "engines": {
+    "node": ">= 12.22.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}

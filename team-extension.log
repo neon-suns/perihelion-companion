@@ -1,0 +1,48 @@
+2022-03-13T21:40:16.664Z - info:   [33095] *** FOLDER: /home/johnny/Dev/cyberpunk/perihelion-companion ***
+2022-03-13T21:40:16.665Z - info:   [33095] AzureReposVSCode/1.2007.15 (VSCode 1.65.2; Linux 5.13.0-35-generic; Node 14.16.0)
+2022-03-13T21:40:16.667Z - debug:  [33095] Looking for an External Context at /home/johnny/Dev/cyberpunk/perihelion-companion
+2022-03-13T21:40:16.667Z - debug:  [33095] No External Context at /home/johnny/Dev/cyberpunk/perihelion-companion
+2022-03-13T21:40:16.670Z - debug:  [33095] Looking for TFVC repository at /home/johnny/Dev/cyberpunk/perihelion-companion
+2022-03-13T21:40:16.670Z - debug:  [33095] TFVC Creating Tfvc object with localPath='undefined'
+2022-03-13T21:40:16.671Z - debug:  [33095] Using TFS proxy: 
+2022-03-13T21:40:16.672Z - debug:  [33095] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\'
+2022-03-13T21:40:16.672Z - warn:   [33095] TFVC C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\ does not exist.
+2022-03-13T21:40:16.673Z - error:  [33095] Unable to find the TF executable. Please ensure TF is installed and the path specified contains the filename.
+2022-03-13T21:44:19.540Z - info:   [34822] *** FOLDER: /home/johnny/Dev/cyberpunk/perihelion-companion ***
+2022-03-13T21:44:19.541Z - info:   [34822] AzureReposVSCode/1.2007.15 (VSCode 1.65.2; Linux 5.13.0-35-generic; Node 14.16.0)
+2022-03-13T21:44:19.542Z - debug:  [34822] Looking for an External Context at /home/johnny/Dev/cyberpunk/perihelion-companion
+2022-03-13T21:44:19.542Z - debug:  [34822] No External Context at /home/johnny/Dev/cyberpunk/perihelion-companion
+2022-03-13T21:44:19.543Z - debug:  [34822] Looking for TFVC repository at /home/johnny/Dev/cyberpunk/perihelion-companion
+2022-03-13T21:44:19.543Z - debug:  [34822] TFVC Creating Tfvc object with localPath='undefined'
+2022-03-13T21:44:19.545Z - debug:  [34822] Using TFS proxy: 
+2022-03-13T21:44:19.545Z - debug:  [34822] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\'
+2022-03-13T21:44:19.545Z - warn:   [34822] TFVC C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\ does not exist.
+2022-03-13T21:44:19.546Z - error:  [34822] Unable to find the TF executable. Please ensure TF is installed and the path specified contains the filename.
+2022-03-13T21:44:39.680Z - debug:  [34822] Reinitializing due to onDidChangeConfiguration
+2022-03-13T21:45:35.502Z - debug:  [34822] Reinitializing due to onDidChangeConfiguration
+2022-03-13T21:46:06.211Z - info:   [36033] *** FOLDER: /home/johnny/Dev/cyberpunk/perihelion-companion ***
+2022-03-13T21:46:06.215Z - info:   [36033] AzureReposVSCode/1.2007.15 (VSCode 1.65.2; Linux 5.13.0-35-generic; Node 14.16.0)
+2022-03-13T21:46:06.215Z - debug:  [36033] Looking for an External Context at /home/johnny/Dev/cyberpunk/perihelion-companion
+2022-03-13T21:46:06.216Z - debug:  [36033] No External Context at /home/johnny/Dev/cyberpunk/perihelion-companion
+2022-03-13T21:46:06.218Z - debug:  [36033] Looking for TFVC repository at /home/johnny/Dev/cyberpunk/perihelion-companion
+2022-03-13T21:46:06.218Z - debug:  [36033] TFVC Creating Tfvc object with localPath='undefined'
+2022-03-13T21:46:06.219Z - debug:  [36033] Using TFS proxy: 
+2022-03-13T21:46:06.219Z - debug:  [36033] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\'
+2022-03-13T21:46:06.219Z - warn:   [36033] TFVC C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\ does not exist.
+2022-03-13T21:46:06.219Z - error:  [36033] Unable to find the TF executable. Please ensure TF is installed and the path specified contains the filename.
+2022-03-13T21:46:07.133Z - debug:  [36033] Reinitializing due to onDidChangeConfiguration
+2022-03-13T21:47:02.706Z - debug:  [36033] Reinitializing due to onDidChangeConfiguration
+2022-03-13T21:47:05.578Z - debug:  [36033] Reinitializing due to onDidChangeConfiguration
+2022-03-13T21:47:07.709Z - debug:  [36033] Reinitializing due to onDidChangeConfiguration
+2022-03-14T17:45:46.168Z - info:   [10215] *** FOLDER: /home/johnny/Dev/cyberpunk/perihelion-companion ***
+2022-03-14T17:45:46.169Z - info:   [10215] AzureReposVSCode/1.2007.15 (VSCode 1.65.2; Linux 5.13.0-35-generic; Node 14.16.0)
+2022-03-14T17:45:46.169Z - debug:  [10215] Looking for an External Context at /home/johnny/Dev/cyberpunk/perihelion-companion
+2022-03-14T17:45:46.170Z - debug:  [10215] No External Context at /home/johnny/Dev/cyberpunk/perihelion-companion
+2022-03-14T17:45:46.171Z - debug:  [10215] Looking for TFVC repository at /home/johnny/Dev/cyberpunk/perihelion-companion
+2022-03-14T17:45:46.171Z - debug:  [10215] TFVC Creating Tfvc object with localPath='undefined'
+2022-03-14T17:45:46.172Z - debug:  [10215] Using TFS proxy: 
+2022-03-14T17:45:46.173Z - debug:  [10215] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\'
+2022-03-14T17:45:46.173Z - warn:   [10215] TFVC C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\ does not exist.
+2022-03-14T17:45:46.174Z - error:  [10215] Unable to find the TF executable. Please ensure TF is installed and the path specified contains the filename.
+2022-03-14T17:45:46.598Z - debug:  [10215] Reinitializing due to onDidChangeConfiguration
+2022-03-14T23:35:56.813Z - debug:  [10215] Reinitializing due to onDidChangeConfiguration
