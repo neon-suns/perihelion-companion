@@ -2,6 +2,14 @@
 
 This is unofficial companion app for depressive cyberpunk RPG Perihelion by Morbid Visions in 1993 for Amiga computers.
 
+Roadmap: This is quite done right now, maybe I will polish design a bit
+- Surely I will try to compile this app into mobile app and provide installation files
+- Fire this on perihelion.neonsuns.cz website with CI/CD pipelines
+
+Enjoy retrogaming, if you would like to fork, feel free to do it.
+
+Thanks for visiting this repo.
+
 ## Install the dependencies
 ```bash
 yarn
