@@ -28,7 +28,7 @@ export default {
     const runeImgPath = computed(() => {
       const convertedIndex = runeIndex.value <= 9 ? `0${runeIndex.value}` : runeIndex.value;
 
-      return `src/assets/runes/${convertedIndex}.png`;
+      return `public/runes/${convertedIndex}.png`;
     });
 
     return {
