@@ -36,6 +36,16 @@
         </div>
       </div>
 
+      <h6 class="q-ma-none q-my-sm">{{ $t('characterClass') }}</h6>
+
+      <div
+        v-for="(characterClass, index) in store.charClass"
+        :key="`${characterClass}-${index}`"
+        class="spell-item__class"
+      >
+        {{ $t(`characterClasses.${characterClass}`) }}
+      </div>
+
       <h6 class="q-ma-none q-my-sm">{{ $t('skillDepends') }}</h6>
 
       {{ $t(`attrs.${[store.depends]}`) }}

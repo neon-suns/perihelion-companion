@@ -7,6 +7,7 @@ const spells = [
     resistance: 'highTemperature',
     positiveModification: true,
     affectedValues: ['morale'],
+    charClass: ['mediator'],
   },
   {
     name: 'Napalm Eruption',
@@ -16,6 +17,7 @@ const spells = [
     resistance: 'highTemperature',
     positiveModification: false,
     affectedValues: ['vitality', 'perception'],
+    charClass: ['mediator', 'psionic', 'anchorite'],
   },
   {
     name: 'Glowing Plasma',
@@ -25,6 +27,7 @@ const spells = [
     resistance: 'highTemperature',
     positiveModification: false,
     affectedValues: ['strength', 'vitality', 'perception'],
+    charClass: ['psionic', 'anchorite'],
   },
   {
     name: 'Black Frost',
@@ -34,6 +37,7 @@ const spells = [
     resistance: 'lowTemperature',
     positiveModification: false,
     affectedValues: ['stamina'],
+    charClass: ['mediator', 'psionic', 'anchorite'],
   },
   {
     name: 'Chilly Vapour',
@@ -43,6 +47,7 @@ const spells = [
     resistance: 'lowTemperature',
     positiveModification: true,
     affectedValues: ['perception', 'dexterity'],
+    charClass: ['mediator', 'anchorite'],
   },
   {
     name: 'Whirring Moraine',
@@ -52,6 +57,7 @@ const spells = [
     resistance: 'lowTemperature',
     positiveModification: false,
     affectedValues: ['morale', 'vitality', 'speed'],
+    charClass: ['psionic', 'anchorite'],
   },
   {
     name: 'Altered Gravity',
@@ -61,15 +67,17 @@ const spells = [
     resistance: 'pressure',
     positiveModification: false,
     affectedValues: ['strength'],
+    charClass: ['mediator', 'psionic', 'anchorite'],
   },
   {
-    name: 'Forced Deflection',
+    name: 'Force Deflection',
     recipe: [23, 29, 35],
     classes: ['SP', 'B', 'C', 'R'],
     depends: 'stamina',
     resistance: 'pressure',
     positiveModification: true,
     affectedValues: ['perception', 'speed'],
+    charClass: ['mediator', 'psionic'],
   },
   {
     name: 'Fulminating Damp',
@@ -79,6 +87,7 @@ const spells = [
     resistance: 'pressure',
     positiveModification: false,
     affectedValues: ['perception', 'strength', 'dexterity'],
+    charClass: ['mediator', 'anchorite'],
   },
   {
     name: 'Static Charge',
@@ -88,6 +97,7 @@ const spells = [
     resistance: 'electricity',
     positiveModification: true,
     affectedValues: ['intelligence'],
+    charClass: ['psionic', 'anchorite'],
   },
   {
     name: 'Electric Shock',
@@ -97,6 +107,7 @@ const spells = [
     resistance: 'electricity',
     positiveModification: false,
     affectedValues: ['dexterity', 'speed'],
+    charClass: ['mediator', 'psionic'],
   },
   {
     name: 'Brush Discharge',
@@ -106,15 +117,17 @@ const spells = [
     resistance: 'electricity',
     positiveModification: false,
     affectedValues: ['morale', 'stamina', 'dexterity'],
+    charClass: ['mediator', 'psionic', 'anchorite'],
   },
   {
-    name: 'Infra Resistance',
+    name: 'Infra Resonance',
     recipe: [31, 40],
     classes: ['SP', 'T', 'ST'],
     depends: 'perception',
     resistance: 'extremeSound',
     positiveModification: false,
     affectedValues: ['concentration'],
+    charClass: ['mediator', 'psionic', 'anchorite'],
   },
   {
     name: 'Mindturbolency',
@@ -124,6 +137,7 @@ const spells = [
     resistance: 'extremeSound',
     positiveModification: true,
     affectedValues: ['perception', 'concentration'],
+    charClass: ['mediator', 'anchorite'],
   },
   {
     name: 'Sonic Boom',
@@ -133,6 +147,7 @@ const spells = [
     resistance: 'extremeSound',
     positiveModification: false,
     affectedValues: ['intelligence', 'perception', 'morale'],
+    charClass: ['mediator', 'psionic'],
   },
   {
     name: 'Shaded Spectrum',
@@ -142,6 +157,7 @@ const spells = [
     resistance: 'extremeLight',
     positiveModification: false,
     affectedValues: ['perception'],
+    charClass: ['psionic', 'anchorite'],
   },
   {
     name: 'Diffused Glare',
@@ -151,6 +167,7 @@ const spells = [
     resistance: 'extremeLight',
     positiveModification: false,
     affectedValues: ['perception', '6thSense'],
+    charClass: ['mediator', 'psionic', 'anchorite'],
   },
   {
     name: 'Liquid Light',
@@ -160,6 +177,7 @@ const spells = [
     resistance: 'extremeLight',
     positiveModification: true,
     affectedValues: ['6thSense', 'strength', 'speed'],
+    charClass: ['mediator', 'anchorite'],
   },
   {
     name: 'Radiant Powder',
@@ -169,6 +187,7 @@ const spells = [
     resistance: 'radiation',
     positiveModification: false,
     affectedValues: ['speed'],
+    charClass: ['mediator', 'anchorite'],
   },
   {
     name: 'Beta Spreadpoint',
@@ -178,6 +197,7 @@ const spells = [
     resistance: 'radiation',
     positiveModification: true,
     affectedValues: ['stamina', 'perception'],
+    charClass: ['psionic', 'anchorite'],
   },
   {
     name: 'Uranium Warp',
@@ -187,6 +207,7 @@ const spells = [
     resistance: 'radiation',
     positiveModification: false,
     affectedValues: ['6thSense', 'stamina', 'concentration'],
+    charClass: ['mediator', 'psionic', 'anchorite'],
   },
   {
     name: 'Hormonal Spray',
@@ -196,6 +217,7 @@ const spells = [
     resistance: 'organicMaterials',
     positiveModification: false,
     affectedValues: ['stamina'],
+    charClass: ['mediator', 'psionic', 'anchorite'],
   },
   {
     name: 'Rank Poison',
@@ -205,6 +227,7 @@ const spells = [
     resistance: 'organicMaterials',
     positiveModification: false,
     affectedValues: ['vitality', 'strength'],
+    charClass: ['mediator', 'anchorite'],
   },
   {
     name: 'DNA Stimulants',
@@ -214,6 +237,7 @@ const spells = [
     resistance: 'organicMaterials',
     positiveModification: true,
     affectedValues: ['6thSense', 'intelligence', 'concentration'],
+    charClass: ['psionic', 'anchorite'],
   },
   {
     name: 'Metallic Layers',
@@ -223,6 +247,7 @@ const spells = [
     resistance: 'organicMaterials',
     positiveModification: true,
     affectedValues: ['stamina'],
+    charClass: ['mediator', 'psionic'],
   },
   {
     name: 'Drifting Sillicon',
@@ -232,6 +257,7 @@ const spells = [
     resistance: 'organicMaterials',
     positiveModification: false,
     affectedValues: ['speed', 'morale'],
+    charClass: ['psionic', 'anchorite'],
   },
   {
     name: 'Aciding Fume',
@@ -241,24 +267,27 @@ const spells = [
     resistance: 'organicMaterials',
     positiveModification: false,
     affectedValues: ['speed', 'concentration', 'dexterity'],
+    charClass: ['mediator', 'psionic', 'anchorite'],
   },
   {
-    name: 'Tamporal Leprosy',
+    name: 'Temporal Leprosy',
     recipe: [7, 36],
     classes: ['SP', 'R', 'F'],
     depends: 'vitality',
     resistance: 'organicMaterials',
     positiveModification: false,
     affectedValues: ['vitality'],
+    charClass: ['anchorite'],
   },
   {
-    name: 'Psion Antidone',
+    name: 'Psion Antidote',
     recipe: [19, 28, 36],
     classes: ['SP', 'B', 'C'],
     depends: 'vitality',
     resistance: 'organicMaterials',
     positiveModification: true,
     affectedValues: ['dexterity', 'vitality'],
+    charClass: ['psionic', 'anchorite'],
   },
   {
     name: 'Septic Thorns',
@@ -268,6 +297,7 @@ const spells = [
     resistance: 'organicMaterials',
     positiveModification: false,
     affectedValues: ['vitality', 'stamina', 'dexterity'],
+    charClass: ['mediator', 'psionic', 'anchorite'],
   },
   {
     name: 'Lifeforce Drain',
@@ -277,6 +307,7 @@ const spells = [
     resistance: 'organicMaterials',
     positiveModification: false,
     affectedValues: ['vitality'],
+    charClass: ['mediator', 'psionic', 'anchorite'],
   },
   {
     name: 'Aura Dispersion',
@@ -286,6 +317,7 @@ const spells = [
     resistance: 'organicMaterials',
     positiveModification: false,
     affectedValues: ['stamina', 'strength'],
+    charClass: ['mediator', 'anchorite'],
   },
   {
     name: 'Inner Shadow',
@@ -295,6 +327,7 @@ const spells = [
     resistance: 'organicMaterials',
     positiveModification: false,
     affectedValues: ['strength', 'concentration'],
+    charClass: ['mediator', 'psionic'],
   },
   {
     name: 'Reality Shift',
@@ -304,6 +337,7 @@ const spells = [
     resistance: 'organicMaterials',
     positiveModification: true,
     affectedValues: ['6thSense', 'morale'],
+    charClass: ['mediator', 'psionic', 'anchorite'],
   },
   {
     name: 'Ethereal Fluidum',
@@ -313,15 +347,17 @@ const spells = [
     resistance: 'organicMaterials',
     positiveModification: true,
     affectedValues: ['strength', 'speed', 'dexterity'],
+    charClass: ['mediator', 'psionic'],
   },
   {
-    name: 'Elastic Trance',
+    name: 'Ecstatic Trance',
     recipe: [15, 36],
     classes: ['SP', 'C', 'R'],
     depends: 'concentration',
     resistance: 'organicMaterials',
     positiveModification: true,
     affectedValues: ['morale'],
+    charClass: ['mediator', 'psionic'],
   },
   {
     name: 'Spiritual Void',
@@ -331,6 +367,7 @@ const spells = [
     resistance: 'organicMaterials',
     positiveModification: false,
     affectedValues: ['inteligence', '6thSense'],
+    charClass: ['mediator', 'psionic'],
   },
   {
     name: 'Schizophrenia',
@@ -340,6 +377,7 @@ const spells = [
     resistance: 'organicMaterials',
     positiveModification: false,
     affectedValues: ['inteligence', 'concentration'],
+    charClass: ['psionic'],
   },
   {
     name: 'Neuron Overdrive',
@@ -349,6 +387,7 @@ const spells = [
     resistance: 'organicMaterials',
     positiveModification: false,
     affectedValues: ['inteligence', '6thSense'],
+    charClass: ['mediator', 'psionic', 'anchorite'],
   },
   {
     name: 'Alpha Catharsis',
@@ -358,6 +397,7 @@ const spells = [
     resistance: 'organicMaterials',
     positiveModification: true,
     affectedValues: ['vitality', 'stamina', 'intelligence'],
+    charClass: ['mediator', 'psionic', 'anchorite'],
   },
 ];
 

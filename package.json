@@ -2,7 +2,7 @@
   "name": "neonsuns-perihelion-companion",
   "version": "0.0.1",
   "description": "This is unofficial companion app for depressive cyberpunk RPG Perihelion by Morbid Visions in 1993 for Amiga computers.",
-  "productName": "NeonSunsPerihelionCompanion",
+  "productName": "Neon Suns Perihelion Companion",
   "author": "NeonSuns",
   "private": true,
   "scripts": {

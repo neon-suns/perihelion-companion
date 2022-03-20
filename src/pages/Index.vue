@@ -10,7 +10,7 @@
     </div>
   </q-page>
   <q-footer class="footer">
-    Made by Neon Suns 2022
+    Made by <a href="https://neonsuns.cz" target="_blank">Neon Suns</a> @ 2022, powered by Vue and Quasar framework
   </q-footer>
 </template>
 

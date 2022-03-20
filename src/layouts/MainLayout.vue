@@ -29,43 +29,19 @@
           {{ $t('spellList') }}
         </q-item-label>
 
-        <q-btn-dropdown
-          class="q-ma-md"
-          color="primary"
-          :label="`Filter Effect (${currentSelection})`"
-        >
-          <q-list>
-            <q-item
-              clickable
-              v-close-popup
-              @click="filterSpells('all')"
-            >
-              <q-item-section>
-                <q-item-label>{{ $t('all') }}</q-item-label>
-              </q-item-section>
-            </q-item>
+        <filter-component
+          :filter-items="['all', 'mediator', 'psionic', 'anchorite']"
+          filter-type="Char type"
+          :current-selection="currentFilters.characterType"
+          @filterItems="filterSpells($event, 'characterType')"
+        />
 
-            <q-item
-              clickable
-              v-close-popup
-              @click="filterSpells('positive')"
-            >
-              <q-item-section>
-                <q-item-label>{{ $t('positiveEffect') }}</q-item-label>
-              </q-item-section>
-            </q-item>
-
-            <q-item
-              clickable
-              v-close-popup
-              @click="filterSpells('negative')"
-            >
-              <q-item-section>
-                <q-item-label>{{ $t('negativeEffect') }}</q-item-label>
-              </q-item-section>
-            </q-item>
-          </q-list>
-        </q-btn-dropdown>
+        <filter-component
+          :filter-items="['all', 'positive', 'negative']"
+          filter-type="Effect type"
+          :current-selection="currentFilters.spellType"
+          @filterItems="filterSpells($event, 'spellType')"
+        />
 
         <q-expansion-item
           label="All Spells"
@@ -92,16 +68,24 @@
 </template>
 
 <script>
-import { ref, computed } from 'vue';
+import { ref, reactive, computed } from 'vue';
+import FilterComponent from 'src/components/FilterComponent.vue';
 import spells from 'src/assets/tables/spells.js';
 import { useStore } from 'src/stores/currentSpell';
 
 export default {
   name: 'MainLayout',
 
+  components: {
+    FilterComponent,
+  },
+
   setup() {
     const leftDrawerOpen = ref(false);
-    const currentSelection = ref('all');
+    const currentFilters = reactive({
+      characterType: 'all',
+      spellType: 'all',
+    });
     const currentSpellStore = useStore();
 
     function toggleLeftDrawer() {
@@ -112,24 +96,29 @@ export default {
       currentSpellStore.$patch(spell);
     }
 
-    function filterSpells(filter) {
-      currentSelection.value = filter;
+    function filterSpells(filterValue, selectedFilter) {
+      currentFilters[selectedFilter] = filterValue;
     }
 
     const filteredSpells = computed(() => {
-      if (currentSelection.value === 'positive') {
-        return spells.filter((item) => item.positiveModification === true);
+      let spellsArray = spells;
+
+      if (currentFilters.characterType !== 'all') {
+        spellsArray = spellsArray
+          .filter((item) => item.charClass.includes(currentFilters.characterType));
       }
 
-      if (currentSelection.value === 'negative') {
-        return spells.filter((item) => item.positiveModification === false);
+      if (currentFilters.spellType !== 'all') {
+        const positiveModification = currentFilters.spellType === 'positive';
+        spellsArray = spellsArray
+          .filter((item) => item.positiveModification === positiveModification);
       }
 
-      return spells;
+      return spellsArray;
     });
 
     return {
-      currentSelection,
+      currentFilters,
       filterSpells,
       filteredSpells,
       leftDrawerOpen,

@@ -9,5 +9,6 @@ export const useStore = defineStore('currentSpell', {
     resistance: 'highTemperature',
     positiveModification: true,
     affectedValues: ['morale'],
+    charClass: ['mediator'],
   }),
 });

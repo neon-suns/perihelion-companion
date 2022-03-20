@@ -10,6 +10,7 @@ export default {
   filterEffects: 'Filter Effects',
   positiveEffect: 'Positive',
   negativeEffect: 'Negative',
+  characterClass: 'Character class',
   runeClasses: {
     SP: 'Sphere (1x1) 2',
     B: 'Blast (1x1) 12',
@@ -60,6 +61,19 @@ export default {
     38: 'Baseness',
     39: 'Hope',
     40: 'Disappointment',
+  },
+  filterItems: {
+    psionic: 'Psionic',
+    mediator: 'Mediator',
+    anchorite: 'Anchorite',
+    all: 'All',
+    positive: 'Positive',
+    negative: 'Negative',
+  },
+  characterClasses: {
+    psionic: 'Psionic',
+    mediator: 'Mediator',
+    anchorite: 'Anchorite',
   },
   attrs: {
     stamina: 'Stamina',
