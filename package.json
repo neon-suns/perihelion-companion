@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "quasar dev",
     "build": "quasar build",
+    "build:debug": "quasar build --debug",
     "lint": "eslint --ext .js,.vue ./",
     "lint:fix": "eslint --ext .js,.vue ./ --fix",
     "test": "echo \"No test specified\" && exit 0"
