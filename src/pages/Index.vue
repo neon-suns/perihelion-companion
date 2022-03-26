@@ -1,10 +1,10 @@
 <template>
   <q-page>
     <div class="row flex-center">
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-sm-5 col-md-6">
         <spell-item class="q-ma-md" />
       </div>
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-sm-7 col-md-6">
         <runes-table class="q-ma-md" />
       </div>
     </div>
