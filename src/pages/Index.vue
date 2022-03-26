@@ -1,11 +1,11 @@
 <template>
-  <q-page class="flex flex-center">
+  <q-page>
     <div class="row flex-center">
-      <div class="col q-ma-md">
-        <spell-item />
+      <div class="col-12 col-md-6">
+        <spell-item class="q-ma-md" />
       </div>
-      <div class="col q-ma-md">
-        <runes-table />
+      <div class="col-12 col-md-6">
+        <runes-table class="q-ma-md" />
       </div>
     </div>
   </q-page>
